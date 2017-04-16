@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Templado Website" default="build" basedir=".">
+
+    <target name="build" depends="setup,render" />
+
+    <target name="render" description="Render static website html">
+        <exec executable="${basedir}/tools/templado">
+            <arg path="${basedir}/src/pages" />
+            <arg path="${basedir}/src/assets" />
+            <arg path="${basedir}/public" />
+        </exec>
+    </target>
+
+    <target name="setup" description="Setup dependencies">
+        <exec executable="phive">
+            <arg value="install" />
+        </exec>
+    </target>
+
+</project>

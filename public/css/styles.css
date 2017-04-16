@@ -85,7 +85,6 @@ header {
     font-size: smaller;
 }
 
-
 main {
     display: block;
     margin: 0 auto;
@@ -94,30 +93,36 @@ main {
 }
 
 article {
-    width:50rem;
+    width: 50rem;
 }
 
 nav {
-    display:table-cell;
-    width:9rem;
-    position:fixed;
-    margin-left:54rem;
+    display: table-cell;
+    width: 9rem;
+    position: fixed;
+    margin-left: 54rem;
 }
 
 nav ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 nav ul li {
-    margin:0.2rem 0;
-    padding: 0 0 0.3rem 0.3rem;
-    border-radius: 5%;
+    margin: 0.4rem 0;
+    padding: 0 0 0.3rem 0.5rem;
+    border-radius: 10% 40%;
+    border-left: 2px solid #00c8c8;
+    border-right: 2px solid #00c8c8;
+}
+
+nav ul li:hover {
+    background-color: #606060;
 }
 
 nav ul li a {
-    color:#ccc;
+    color: #ccc;
 }
 
 nav ul li a:hover {
@@ -127,17 +132,16 @@ nav ul li a:hover {
 nav ul li a::before {
     content: "»";
     color: #000;
-    font-size:larger;
-    padding-right:0.2rem;
+    font-size: larger;
+    padding-right: 0.2rem;
 }
 
 nav ul li a:hover::before {
     content: "»";
     color: #00c8c8;
-    font-size:larger;
-    padding-right:0.2rem;
+    font-size: larger;
+    padding-right: 0.2rem;
 }
-
 
 footer {
     margin: 0 auto 1rem auto;
@@ -149,13 +153,11 @@ footer {
     color: #aaa;
 }
 
-
-
 blockquote {
     font-size: x-large;
     line-height: 90%;
     font-family: 'open_sanssemibold', Verdana, Arial, sans-serif;
-    width: 37.4rem;
+    width: 38rem;
     margin: 3rem auto;
     padding: 0;
 }

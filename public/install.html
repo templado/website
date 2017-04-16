@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Templado.io - Installation</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="head">
+        <img class="logo" src="gfx/logo-web.svg" alt="templado logo" />
+        <div>
+          <span>A pragmatic approach to templating for PHP 7+</span>
+          <img src="https://scrutinizer-ci.com/g/templado/engine/badges/build.png?b=master" />
+          <img src="https://scrutinizer-ci.com/g/templado/engine/badges/coverage.png?b=master" />
+          <img src="https://scrutinizer-ci.com/g/templado/engine/badges/quality-score.png?b=master" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="/install.html">Installation</a>
+          </li>
+          <!--<li><a href="#">Code Samples</a></li>-->
+          <li>
+            <a href="https://github.com/templado/engine/issues">Report Issue</a>
+          </li>
+          <li>
+            <a href="https://github.com/templado/engine">Get the Source</a>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <h1>Installation</h1>
+        <p>You can add this library as a local, per-project dependency to your project using Composer:</p>
+        <code class="shell">
+            composer require templado/engine
+        </code>
+        <p>If you only need this library during development, for instance to prebuild static html files, then you
+            should add it as a development-time dependency:</p>
+        <code class="shell">
+            composer require --dev templado/engine
+        </code>
+      </article>
+    </main>
+    <footer id="footer">
+      <span>Copyright © 2017 Arne Blankerts · <a href="/imprint.html">Imprint</a></span>
+    </footer>
+  </body>
+</html>
