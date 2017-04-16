@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Templado.io</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/idea.css">
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/templado.js"></script>
+</head>
+<body>
+<header>
+    <div class="head">
+        <img class="logo" src="gfx/logo-web.svg" alt="templado logo"/>
+        <div>
+            <span>A pragmatic approach to templating for PHP 7+</span>
+            <img src="gfx/build.svg"/>
+            <img src="gfx/coverage.svg"/>
+            <img src="gfx/score.svg"/>
+        </div>
+    </div>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="#">Installation</a></li>
+            <li><a href="#">Code Samples</a></li>
+            <li><a href="#">Report Issue</a></li>
+            <li><a href="#">Get the Source</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+
+        <blockquote>
+            <span>Finally a template engine that does</span><br/><span>not require learning a new language or syntax.</span>
+        </blockquote>
+
+        <p>Most of today's templating engines mix code for the required rendering logic with HTML markup in one file and
+            require developers to learn their respective language as well as syntax.</p>
+
+        <p>Templado follows a different approach on templating: Being in part inspired by <a href="#" class="offsite" rel="nofollow">Tempan</a>,
+            Templado relies solely on plain and standard HTML markup. The limited amount of display logic required is
+            contained within the engine and triggered by the view model, asset or form when being applied to the Page.
+        </p>
+
+        <div class="features">
+            <div>
+                <h2><img src="gfx/preview.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>Always ready to preview</h2>
+                <p>As a Templado template is plain HTML, previewing is as easy as opening the HTML file with a browser -
+                    example
+                    data can and should be included as the engine will clean it up based on the view model upon
+                    rendering.</p>
+            </div>
+
+            <div>
+                <h2><img src="gfx/combine.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>No markup duplication</h2>
+                <p>Templado features asset support, mapping a list of assets based on their ID into a given HTML Page.
+                    To
+                    automate this process <a class="offsite" href="https://github.com/theseer/templado-cli">Templado CLI</a> can be
+                    used.
+                    Combined with a File watcher in your IDE, you can have an always up-to-date set of HTML pages
+                    without ever
+                    writing a block twice.</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <div>
+                <h2><img src="gfx/form.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>Form handling included</h2>
+                <p>To make form handling even more easy, Templado comes with explicit HTML Form support. Based on
+                    supplied Input
+                    data, Templado will repopulate the HTML form and even include your CSRF protection code.</p>
+            </div>
+
+            <div>
+                <h2><img src="gfx/transform.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>Custom Transformations and Filters</h2>
+                <p>Templado allows for custom transformations, like adding a class to every <code>a</code> tag and
+                    string based
+                    replacement filters upon serialization.</p>
+            </div>
+        </div>
+    </article>
+
+    <!--
+    <hr />
+
+    <section>
+        <h1>Installation</h1>
+        <p>You can add this library as a local, per-project dependency to your project using Composer:</p>
+        <code class="shell">
+        composer require theseer/templado
+        </code>
+
+        <p>If you only need this library during development, for instance to prebuild static html files, then you
+            should add it as a development-time dependency:</p>
+        <code class="shell">
+        composer require --dev theseer/templado
+        </code>
+    </section>
+
+    <hr />
+
+    <section>
+        <h1>Usage examples</h1>
+        <h2>Applying a view model</h2>
+        <pre><code class="php">&lt;?php declare(strict_types=1);
+
+var_dump('hello world');</code></pre>
+
+        <h2>Working with Assets</h2>
+        <pre><code class="php">
+
+        </code></pre>
+
+        <h2>Setting a CSRF protection token</h2>
+        <pre><code class="php">
+
+        </code></pre>
+
+        <h2>Using a transformation</h2>
+        <pre><code class="php">
+
+        </code></pre>
+
+        <h2>Using a string filter</h2>
+        <pre><code class="php">
+
+        </code></pre>
+    </section>
+-->
+</main>
+
+<footer>
+    <span>Copyright &#169; 2017 Arne Blankerts · <a href="#">Imprint</a></span>
+</footer>
+</body>
+</html>
