@@ -8,7 +8,9 @@
   <body>
     <header id="header">
       <div class="head">
-        <img class="logo" src="gfx/logo-web.svg" alt="templado logo" />
+        <a href="/index.html">
+          <img class="logo" src="gfx/logo-web.svg" alt="templado logo" />
+        </a>
         <div>
           <span>A pragmatic approach to templating for PHP 7+</span>
           <img src="https://scrutinizer-ci.com/g/templado/engine/badges/build.png?b=master" />
@@ -16,25 +18,28 @@
           <img src="https://scrutinizer-ci.com/g/templado/engine/badges/quality-score.png?b=master" />
         </div>
       </div>
-    </header>
-    <main>
       <nav id="nav">
         <ul>
-          <li>
+          <li class="one">
             <a href="/index.html">About</a>
           </li>
-          <li>
+          <li class="two">
             <a href="/install.html">Installation</a>
           </li>
-          <!--<li><a href="#">Code Samples</a></li>-->
-          <li>
+          <li class="three">
+            <a href="/imprint.html">Imprint</a>
+          </li>
+          <li class="four">
             <a href="https://github.com/templado/engine/issues">Report Issue</a>
           </li>
-          <li>
+          <li class="five">
             <a href="https://github.com/templado/engine">Get the Source</a>
           </li>
+          <hr />
         </ul>
       </nav>
+    </header>
+    <main>
       <article>
         <blockquote>
           <span>Finally a template engine that does</span>
@@ -56,7 +61,7 @@
           </div>
           <div>
             <h2><img src="gfx/combine.svg" style="width:4rem; text-align: center; padding-bottom:1rem;" /><br />No markup duplication</h2>
-            <p>Templado features asset support, mapping a list of assets based on their ID into a given HTML Page.
+            <p>Templado features snippet support, mapping a list of snippets based on their ID into a given HTML Page.
                     To automate this process <a class="offsite" href="https://github.com/templado/cli">Templado CLI</a> can be
                     used. Combined with a File watcher in your IDE, you can have an always up-to-date set of HTML pages
                     without ever writing a block twice.</p>

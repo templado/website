@@ -2,8 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Templado.io - Installation</title>
+    <title>Templado.io - Examples</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/idea.css" />
+    <script src="/js/highlight.pack.js"></script>
+    <script src="/js/templado.js"></script>
   </head>
   <body>
     <header id="header">
@@ -35,22 +38,28 @@
           <li class="five">
             <a href="https://github.com/templado/engine">Get the Source</a>
           </li>
-          <hr class="two"/>
+          <hr />
         </ul>
       </nav>
     </header>
     <main>
-      <article>
-        <h1>Installation</h1>
-        <p>You can add this library as a local, per-project dependency to your project using Composer:</p>
-        <code class="shell">
-            composer require templado/engine
-        </code>
-        <p>If you only need this library during development, for instance to prebuild static html files, then you
-            should add it as a development-time dependency:</p>
-        <code class="shell">
-            composer require --dev templado/engine
-        </code>
+      <article class="usage">
+        <h1>Usage examples</h1>
+        <h2>Applying a view model</h2>
+        <code class="php" id="viewmodel">&lt;?php declare(strict_types = 1);
+
+$xx = 'abc';
+echo "hello world.";
+
+</code>
+        <h2>Working with Snippets</h2>
+        <code class="php" id="snippet"></code>
+        <h2>Setting a CSRF protection token</h2>
+        <code class="php" id="csrfprotection"></code>
+        <h2>Using a transformation</h2>
+        <code class="php" id="transformation"></code>
+        <h2>Using a string filter</h2>
+        <code class="php" id="filter"></code>
       </article>
     </main>
     <footer id="footer">

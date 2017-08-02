@@ -6,7 +6,7 @@
     <target name="render" description="Render static website html">
         <exec executable="${basedir}/tools/templado">
             <arg path="${basedir}/src/pages" />
-            <arg path="${basedir}/src/assets" />
+            <arg path="${basedir}/src/snippets" />
             <arg path="${basedir}/public" />
         </exec>
     </target>
