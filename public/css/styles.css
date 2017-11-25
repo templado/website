@@ -15,7 +15,7 @@
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -49,7 +49,7 @@ a.offsite:hover::before {
 header {
     position: fixed;
     background-color: #666;
-    width:100%;
+    width: 100%;
 }
 
 .head {
@@ -58,111 +58,110 @@ header {
     width: 63rem;
 }
 
-.head > img, .head a img {
+.head > img, .head > a img {
     position: relative;
-    width: 14rem;
     float: left;
     top: -0.5rem;
     margin-right: 1rem;
 }
 
 .head > div {
+    position: relative;
     overflow: hidden;
-    display: table-cell;
     vertical-align: middle;
-    text-align: right;
-    border-top: 1px solid #aaa;
     border-bottom: 2px solid #aaa;
     padding: 0.5rem;
-    width: 47rem;
 }
 
-.head div img {
+.head div img, .head div a {
     vertical-align: middle;
+    float: right;
+    padding-left: 0.2rem;
 }
 
 .head div span {
     display: inline-block;
     text-align: left;
     color: #fff;
-    width: 26rem;
     font-size: smaller;
 }
 
 main {
     display: block;
     margin: 0 auto;
-    padding-top: 7rem;
+    padding-top: 8rem;
     width: 63rem;
 }
 
 article {
     width: 50rem;
+    margin:0 auto;
 }
 
 nav {
-  width: 63rem;
-  margin: 0 auto;
+    clear: both;;
+    width: 63rem;
+    margin: 0 auto;
 }
 
-
 nav ul li {
-  display: inline;
-  text-align: center;
-  margin-right: -4px;
+    display: inline;
+    text-align: center;
+    margin-right: -4px;
 }
 
 nav ul li a {
-  display: inline-block;
-  width: 12rem;
-  padding: .75rem 0;
-  margin: 0;
-  text-decoration: none;
-  color: #ccc;
+    display: inline-block;
+    width: 12rem;
+    padding: .75rem 0;
+    margin: 0;
+    text-decoration: none;
+    color: #ccc;
 }
 
 .one:hover ~ hr {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .two:hover ~ hr {
-  margin-left: 12rem;
+    margin-left: 12rem;
 }
 
 .three:hover ~ hr {
-  margin-left: 24rem;
+    margin-left: 24rem;
 }
 
 .four:hover ~ hr {
-  margin-left: 36rem;
+    margin-left: 36rem;
 }
 
 .five:hover ~ hr {
-  margin-left: 48rem;
+    margin-left: 48rem;
 }
 
 nav ul hr {
-  height: .25rem;
-  width: 12rem;
-  margin: 0;
-  background: #00c8c8;
-  border: none;
-  transition: .3s ease-in-out;
+    height: .25rem;
+    width: 12rem;
+    margin: 0;
+    background: #00c8c8;
+    border: none;
+    transition: .3s ease-in-out;
 }
 
 nav ul hr.two {
-  margin-left: 12rem;
+    margin-left: 12rem;
 }
 
 nav ul hr.three {
-  margin-left: 24rem;
+    margin-left: 24rem;
 }
 
 nav ul hr.four {
-  margin-left: 36rem;
+    margin-left: 36rem;
 }
+
 nav ul hr.five {
-  margin-left: 48rem;
+    margin-left: 48rem;
 }
 
 footer {
@@ -222,7 +221,7 @@ h1 {
 }
 
 code {
-    white-space:pre-wrap;
+    white-space: pre-wrap;
     margin: 0.5rem 0 1rem;
 }
 
@@ -250,8 +249,8 @@ code {
 }
 
 .usage h2 {
-    text-align:left;
-    margin:0;
-    padding:0;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
