@@ -11,7 +11,7 @@
 <header id="header" />
 
 <main>
-    <article >
+    <article>
         <blockquote>
             <span>Finally a template engine that does</span><br/><span>not require learning a new language or syntax.</span>
         </blockquote>
@@ -20,8 +20,8 @@
             require developers to learn their respective language as well as syntax.</p>
 
         <p>Templado follows a different approach on templating: Being in part inspired by <a href="#" class="offsite" rel="nofollow">Tempan</a>,
-            Templado relies solely on plain and standard HTML markup. The limited amount of display logic required is
-            contained within the engine and triggered by the view model, asset or form when being applied to the Page.
+            Templado relies solely on plain and standard HTML markup with <a class="offsite" rel="nofollow" href="https://www.w3.org/TR/rdfa-lite/">RDFa Lite</a> annotations. The limited amount of display logic required is
+            contained within the engine and triggered by the view model, snippet or form when being applied to the Page.
         </p>
 
         <div class="features">
@@ -33,24 +33,24 @@
             </div>
 
             <div>
+                <h2><img src="gfx/form.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>Form handling included</h2>
+                <p>To make form handling even more easy, Templado comes with explicit HTML Form support. Based on
+                    supplied Input data, Templado will repopulate the HTML form and even include your CSRF protection code.</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <div>
                 <h2><img src="gfx/combine.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>No markup duplication</h2>
                 <p>Templado features snippet support, mapping a list of snippets based on their ID into a given HTML Page.
                     To automate this process <a class="offsite" href="https://github.com/templado/cli">Templado CLI</a> can be
                     used. Combined with a File watcher in your IDE, you can have an always up-to-date set of HTML pages
                     without ever writing a block twice.</p>
             </div>
-        </div>
-
-        <div class="features">
-            <div>
-                <h2><img src="gfx/form.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>Form handling included</h2>
-                <p>To make form handling even more easy, Templado comes with explicit HTML Form support. Based on
-                    supplied Input data, Templado will repopulate the HTML form and even include your CSRF protection code.</p>
-            </div>
 
             <div>
                 <h2><img src="gfx/transform.svg" style="width:4rem; text-align: center; padding-bottom:1rem;"/><br/>Custom Transformations and Filters</h2>
-                <p>Templado allows for custom transformations, like adding a class to every <code>a</code> tag and
+                <p>Templado allows for custom transformations, like adding a class to every &lt;a&gt; tag and
                     string based replacement filters upon serialization.</p>
             </div>
         </div>
