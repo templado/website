@@ -183,6 +183,32 @@ class SampleView {
                 <br/>
                 <!--See the section about <a href="#">conditional processing</a> below.-->
             </p>
+            <code class="php">&lt;?php declare(strict_types = 1);
+
+class SampleView {
+
+    public function getChild(): ChildView {
+        return new ChildView();
+    }
+}
+
+class ChildView {
+
+    public function asString(string $text): string {
+        return 'new text';
+    }
+
+    public function getClass(string $text): string {
+        return $text . ' current';
+    }
+
+    public function typeOf(): string {
+        return 'type-A';
+    }
+
+}
+            </code>
+
         </section>
 
     </article>

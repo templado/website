@@ -166,7 +166,7 @@ class SampleView {
             </p>
           <h2>Boolean</h2>
           <p>
-                A boolean <em>false</em> can be used to templado remove a node or attribute. A boolean <em>true</em> is
+                A boolean <em>false</em> can be used to remove a node or attribute. A boolean <em>true</em> is
                 currently not processed and silently ignored.
                 <code class="php">&lt;?php declare(strict_types = 1);
 
@@ -217,8 +217,33 @@ class SampleView {
                 <br />
                 Non-Matching nodes will be removed. If no matching node can be found, an exception is thrown.
                 <br />
-                See the section about <a href="#">conditional processing</a> below.
+                <!--See the section about <a href="#">conditional processing</a> below.-->
             </p>
+          <code class="php">&lt;?php declare(strict_types = 1);
+
+class SampleView {
+
+    public function getChild(): ChildView {
+        return new ChildView();
+    }
+}
+
+class ChildView {
+
+    public function asString(string $text): string {
+        return 'new text';
+    }
+
+    public function getClass(string $text): string {
+        return $text . ' current';
+    }
+
+    public function typeOf(): string {
+        return 'type-A';
+    }
+
+}
+            </code>
         </section>
       </article>
     </main>
