@@ -32,25 +32,28 @@
       </div>
       <nav id="nav">
         <ul>
-          <li class="one">
+          <li class="about">
             <a href="/index.html">About</a>
           </li>
-          <li class="two">
+          <li class="start">
             <a href="/start.html">Getting Started</a>
           </li>
-          <li class="three">
+          <li class="views">
             <a href="/views.html">View Models</a>
           </li>
-          <li class="four">
+          <li class="forms">
             <a href="/forms.html">Forms</a>
           </li>
-          <li class="five">
+          <li class="snippets">
             <a href="/snippets.html">Snippets</a>
           </li>
-          <li class="six">
-            <a href="/transformation.html">Transformations</a>
+          <li class="transformations">
+            <a href="/transformations.html">Transformations</a>
           </li>
-          <hr class="one" />
+          <li class="filters">
+            <a href="/filters.html">Filters</a>
+          </li>
+          <hr class="about" />
         </ul>
       </nav>
     </header>
@@ -85,8 +88,8 @@
             </p>
           <p>
                 Every element within that HTML document containing a <em>property</em> attribute will be
-                addressed by templado. A given view model must implement methods with these names, so templado
-                can call them - optionally prefixed by "get" - like in this example:
+                addressed by templado. A given view model must implement methods with names matching the values of the property attribute,
+                so templado can call them - optionally prefixed by "get" - like in this example:
                 <code class="php">&lt;?php declare(strict_types = 1);
 
 class SampleView {
@@ -102,7 +105,7 @@ class SampleView {
                 </code>
             </p>
           <p>
-                To apply the above view model onto the base HTML loaded earlier, simply use the templado API:
+                To apply the above view model onto the base HTML loaded earlier, we simply use the templado API:
                 <code class="php">&lt;?php declare(strict_types = 1);
 
 $html-&gt;applyViewModel(new SampleView());
@@ -110,7 +113,7 @@ echo $html-&gt;asString();
                 </code>
             </p>
           <p>
-                The echo will output of the transformed HTML which will look like this:
+                The echo will output the transformed HTML, which will look like this:
                 <code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
     &lt;head&gt;
@@ -126,19 +129,19 @@ echo $html-&gt;asString();
             </p>
           <p>
                 While using such a basic view model might actually get you quite far already, the full potential of
-                templado get into play when with nested structures and lists. To achieve that, templado's behavior
+                templado get into play with nested structures and lists. To achieve that, templado's behavior
                 changes depending on the return type of the method called. As of version 2.2.0, the following return
-                types are generally supported: <strong>array</strong>, <strong>boolean</strong>, <strong>null</strong>
+                types are generally supported: <strong>array/iterator</strong>, <strong>boolean</strong>, <strong>null</strong>
                 and <strong>object</strong>. In case other types are returned, the engine will throw an exception.
             </p>
           <p>
                 Let's have a look at the individual types in more detail.
             </p>
-          <h2>Array</h2>
+          <h2>Array &amp; Iterator</h2>
           <p>
-                The current node will be copied as many times as there are items in the returned array. As the template
-                may contain redundant nodes of the same property, templado will clean up so that the template can
-                illustrate the looks of a longer list then there are actually items in the array.
+                The current node will be copied as many times as there are items in the returned array or iterator. As
+                the template may contain redundant nodes of the same property, templado will clean up so that the
+                template may illustrate the looks of a longer list than there actually are items in the array or iterator.
                 <code class="php">&lt;?php declare(strict_types = 1);
 
 class SampleView {
@@ -197,7 +200,7 @@ class SampleView {
             </p>
           <h2>object</h2>
           <p>
-                An object does not necessarily provide any content of its on but first of all sets the context for
+                An object does not necessarily provide any content of its own but first of all sets the context for
                 nested childnodes of the current context node. Nested properties will be resolved against this
                 object until another returned object is taking over or the current context processing is completed.
             </p>
@@ -205,7 +208,7 @@ class SampleView {
                 Additionally, for every attribute of the current node, templado will check whether or not a method with
                 the name of the attribute is defined on this object - with or without the prefixed "get". If so, it will
                 be called, passing the current value of the attribute along. Only <em>string</em> and <em>false</em> to
-                remove the attribute are supported.
+                remove the attribute are supported as a return type.
             </p>
           <p>
                 To set the node's text content - removing all potentially existing child nodes -, the object needs to
@@ -248,7 +251,7 @@ class ChildView {
       </article>
     </main>
     <footer id="footer">
-      <span>Copyright © 2017 Arne Blankerts · <a href="/imprint.html">Imprint</a></span>
+      <span>Copyright © 2017-2018 Arne Blankerts · <a href="/imprint.html">Imprint</a></span>
     </footer>
   </body>
 </html>

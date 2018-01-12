@@ -49,6 +49,7 @@ a.offsite:hover::before {
 header {
     background-color: #666;
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .head {
@@ -116,58 +117,67 @@ nav ul li a {
     color: #ccc;
 }
 
-.one a  {
+.about a  {
     width: 6rem;
 }
 
-.two a {
+.start a {
     width:10rem;
 }
 
-.three a {
+.views a {
     width:8rem;
 }
 
-.four a {
+.forms a {
     width:6rem;
 }
 
-.five a {
+.snippets a {
     width:7rem;
 }
 
-.six a {
+.transformations a {
     width:10rem;
 }
 
-.one:hover ~ hr, hr.one {
+.filters a {
+    width:6rem;
+}
+
+.about:hover ~ hr, hr.about {
     margin-left: 0;
     width:6rem;
 }
 
-.two:hover ~ hr, hr.two {
+.start:hover ~ hr, hr.start {
     margin-left: 6rem;
     width:10rem;
 }
 
-.three:hover ~ hr, hr.three {
+.views:hover ~ hr, hr.views {
     margin-left: 16rem;
     width:8rem;
 }
 
-.four:hover ~ hr, hr.four {
+.forms:hover ~ hr, hr.forms {
     margin-left: 24rem;
     width:6rem;
 }
 
-.five:hover ~ hr, hr.five {
+.snippets:hover ~ hr, hr.snippets {
     margin-left: 30rem;
     width:7rem;
 }
 
-.six:hover ~ hr, hr.six {
+.transformations:hover ~ hr, hr.transformations {
     margin-left: 37rem;
     width:10rem;
+}
+
+.filters:hover ~ hr, hr.filters {
+    margin-left: 47rem;
+    width:6rem;
 }
 
 nav ul hr {
