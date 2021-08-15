@@ -125,23 +125,15 @@ nav ul li a {
     width:10rem;
 }
 
-.views a {
-    width:8rem;
-}
-
-.forms a {
-    width:6rem;
-}
-
-.snippets a {
-    width:7rem;
-}
-
-.transformations a {
+.docs a {
     width:10rem;
 }
 
-.filters a {
+.support a {
+    width:6rem;
+}
+
+.source a {
     width:6rem;
 }
 
@@ -155,30 +147,21 @@ nav ul li a {
     width:10rem;
 }
 
-.views:hover ~ hr, hr.views {
+.docs:hover ~ hr, hr.docs {
     margin-left: 16rem;
-    width:8rem;
-}
-
-.forms:hover ~ hr, hr.forms {
-    margin-left: 24rem;
-    width:6rem;
-}
-
-.snippets:hover ~ hr, hr.snippets {
-    margin-left: 30rem;
-    width:7rem;
-}
-
-.transformations:hover ~ hr, hr.transformations {
-    margin-left: 37rem;
     width:10rem;
 }
 
-.filters:hover ~ hr, hr.filters {
-    margin-left: 47rem;
+.support:hover ~ hr, hr.support {
+    margin-left: 26rem;
     width:6rem;
 }
+
+.source:hover ~ hr, hr.source {
+    margin-left: 32rem;
+    width:6rem;
+}
+
 
 nav ul hr {
     height: .25rem;
