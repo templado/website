@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phive xmlns="https://phar.io/phive">
-  <phar name="templado/cli" version="^0.2.0" installed="0.3.0" location="./tools/templado"/>
+  <phar name="templado/cli" version="^0.4.0" installed="0.4.0" location="./tools/templado" copy="false"/>
 </phive>
